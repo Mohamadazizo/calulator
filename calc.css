@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(red , black);
+}
+body .container{
+    width: 350px;
+    height: 500px;
+    background-color: #eee;
+    color: black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    grid-template-rows: 150px 1fr ;
+}
+.container .viwe{
+ background-color: #eee;
+ border-radius: 5px;
+ margin: 15px;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+             -5px -5px 5px rgba(255, 255, 255, 0.8);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow:auto;
+font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .buttoms{
+    display: grid;
+    margin: 15px;
+    border-radius: 5px;
+    grid-template-columns:repeat(3 , 1fr) ;
+    grid-template-rows: repeat(5 , 1fr);
+    grid-gap: 10px;
+}
+.container .buttoms .box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eee ;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+             -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+.container .buttoms .box:focus{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+.container .buttoms .boxc{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
